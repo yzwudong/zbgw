@@ -266,7 +266,7 @@ void usbModeSet(usbMode mode)
   {
     Serial.updateBaudRate(115200);
   }
-  // digitalWrite(hwConfig.mist.uartSelPin, pinValue);
+ digitalWrite(hwConfig.mist.uartSelPin, pinValue);
   if (pinValue)
   {
     ledControl.modeLED.mode = LED_ON;
